@@ -5,6 +5,6 @@ app.directive('test', function(){
     controller: function($scope) {
       $scope.title = 'w00t';
     },
-    templateUrl: 'partial.html'
+    templateUrl: 'test/partial.html'
   }
 });
