@@ -1,11 +1,11 @@
-app.directive('breaker', function(){
+app.directive('poodle', function(){
   return {
     restrict: 'E',
     scope: false,
     transclude: true,
     controller: function($scope) {
-      $scope.title = 'thing';
+      $scope.title = 'puppy';
     },
-    templateUrl: 'breaker/partial.html'
+    templateUrl: 'poodle/partial.html'
   }
 });
