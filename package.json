@@ -1,0 +1,22 @@
+{
+  "name": "test-directive",
+  "version": "0.0.0",
+  "description": "Testing directives",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svnh/test-directive.git"
+  },
+  "author": "Savannah Kunovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svnh/test-directive/issues"
+  },
+  "homepage": "https://github.com/svnh/test-directive#readme"
+}
