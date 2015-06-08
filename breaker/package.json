@@ -1,0 +1,14 @@
+{
+  "name": "breaker",
+  "version": "0.0.0",
+  "description": "Breakin' stuff",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Savannah Kunovsky (sekunovsky@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.3.16"
+  }
+}
