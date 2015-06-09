@@ -4,6 +4,15 @@ app.directive('markdown', ['$window', '$compile', function($window, $compile){
 
   return {
     restrict: 'E',
+    controller: function($scope, $http) {
+      $http.get(data.url + '/' + data.branch + ':' + data.page)
+        .then(function(data) {
+          $scope.data = data.data.data;
+        })
+        .catch(function(err) {
+          $scope.data = err.statusText;
+        });
+    },
     link: function(scope, element, attrs) {
       var md = (function() {
         marked.setOptions({
@@ -76,7 +85,7 @@ app.directive('markdown', ['$window', '$compile', function($window, $compile){
 
         html = html.replace(/href="(http)?(.+)"/gi, function(match) {
           if(arguments[1]) return match;
-          return match.replace(/href=".+"/gi, 'href="http://localhost:3000/app?branch=master&widget=test&children=markdown&data=http://54.191.127.180,master,' + arguments[2] + '.md"');
+          return match.replace(/href=".+"/gi, 'href="http://localhost:3000/app?branch=master&widget=test&children=markdown&data=url=http://54.191.127.180,branch=master,page=' + arguments[2] + '.md"');
         });
         element.html(html);
 

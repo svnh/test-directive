@@ -9,6 +9,8 @@
   "author": "Savannah Kunovsky (sekunovsky@gmail.com)",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.3.16"
+    "angular": "^1.3.16",
+    "highlight.js": "^8.6.0",
+    "marked": "^0.3.3"
   }
 }
