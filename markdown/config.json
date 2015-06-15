@@ -1,5 +1,8 @@
 {
-  "angular": "angular/angular.js",
-  "hljs": "highlight.js/lib/highlight.js",
-  "marked": "marked/lib/marked.js"
+  "dependencies": {
+    "angular": "angular/angular.js",
+    "hljs": "highlight.js/lib/highlight.js",
+    "marked": "marked/lib/marked.js"
+  },
+  "children": []
 }

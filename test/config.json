@@ -1,3 +1,6 @@
 {
-  "angular": "angular/angular.js"
+  "dependencies": {
+    "angular": "angular/angular.js"
+  },
+  "children": ["markdown"]
 }
